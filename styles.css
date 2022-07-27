@@ -2,24 +2,49 @@ h1, h2, p
 {
     text-align: center;
 }
+h1, h2 {
+     font-family: Impact, serif;
+}
+h1 {
+    font-size: 40px;
+}
+  h2 {
+    font-size: 30px
+}
 body 
 {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
 }
+
 /* This is for body element*/
 /* So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
 .class-name {
   styles
 } */
+.established {font-style: italic;}
+/* .established for <p> EST 2020*/
 .menu 
 /* #1 (index.html)
 /* .menu(class) was changed from div{} (style elements)*/
 {
     background-color: burlywood;
     width: 80%;
+/* The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
+*/
+    max-width: 500px;
 /* You want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto */
     margin-left: auto;
     margin-right: auto;
+/* spaces on left and right, top and buttom(padding)
+    padding-left: 20px; 
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px
+*/
+    padding: 20px;
+
 }
 .flavor, .dessert
 /* #2 
