@@ -7,6 +7,8 @@ h1, h2 {
 }
 h1 {
     font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
   h2 {
     font-size: 30px
@@ -15,8 +17,21 @@ body
 {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+    padding: 20px;
 }
-
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+/* The image you added is not centered horizontally like the Coffee heading above it. img elements are "like" inline elements.
+To make the image behave like heading elements (which are block-level), create an img type selector and use the value block for the display property and use the applicable margin-left and margin-right values to center it horizontally. */
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px;
+}
 /* This is for body element*/
 /* So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
 .class-name {
@@ -31,8 +46,7 @@ body
     background-color: burlywood;
     width: 80%;
 /* The current width of the menu will always take up 80% of the body element's width. On a very wide screen, the coffee and dessert appear far apart from their prices.
-Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide.
-*/
+Add a max-width property to the menu class with a value of 500px to prevent it from growing too wide. */
     max-width: 500px;
 /* You want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto */
     margin-left: auto;
@@ -41,14 +55,13 @@ Add a max-width property to the menu class with a value of 500px to prevent it f
     padding-left: 20px; 
     padding-right: 20px;
     padding-top: 20px;
-    padding-bottom: 20px
-*/
+    padding-bottom: 20px */
     padding: 20px;
 
 }
+
 .flavor, .dessert
-/* #2 
-*/
+/* #2 */
 {
     text-align: left;
  /* #5 */   width: 75%;
@@ -61,8 +74,7 @@ Add a max-width property to the menu class with a value of 500px to prevent it f
 /*play around with the width 100% total ideally*/ 
 /* #4 The p elements are nested in an article element with the class attribute of item. You can style all the p elements nested anywhere in elements with a class named item like this:
 .item p { }
-Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements.
-*/
+Using the above selector, add a display property with value inline-block so the p elements behave more like inline elements. */
 .item p
 {
 display: inline-block;
@@ -71,8 +83,34 @@ To spread them out, add a width property to the flavor and price class selectors
 */
 /* Check #5 (above) */ 
 /*Well that did not work. Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%
-set to 49
-*/
-/*put flavor p and price p elements in one line and make the width 50%
-*/
+set to 49 */
+/*put flavor p and price p elements in one line and make the width 50%*/
+margin-top: 5px;
+margin-bottom: 5px;
+font-size: 18px;
+}
+.bottom-line {
+    margin-top: 25px;
+}
+/* ################  FOOTER   ################ */
+footer {
+    font-size: 14px;
+}
+a {
+    color: black;
+}
+/* You change properties of a link when the link has actually been visited by using a pseudo-selector that looks like a:visited { propertyName: propertyValue; }. */
+a:visited {
+    color: black;
+}
+/* You change properties of a link when the mouse hovers over them by using a pseudo-selector that looks like a:hover { propertyName: propertyValue; } */
+a:hover {
+    color: brown;
+}
+/* You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; } */
+a:active {
+    color: brown;
+}
+.address {
+    margin-bottom: 5px;
 }
