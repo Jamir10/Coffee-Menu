@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<!-- lang="en" (language)-->
+<html lang="en">
+<head>
+<!-- <title> what shown in the tab bar -->
+    <title>Cafe Menu</title>
+<!--meta element with an attribute named charset set to the value utf-8 to tell the browser how to encode characters for the page. Note that meta elements are self-closing.-->
+    <meta charset="utf-8">
+<!-- three type selectors with the exact same styling   
+    <style>
+        h1 {text-align: center;}
+        h2 {text-align: center;}
+        p {text-align: center;} 
+    </style>
+OR
+<style> h1, h2, p {text-align: center;}</style>
+Inline style (remove once you transfered to css)
+link the styles.css file
+-->
+    <link rel="stylesheet" href="styles.css">
+<!--For the styling of the page to look similar on mobile as it does on a desktop or laptop, you need to add a meta element with a special content attribute -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+<body>
+<!--The div element is used mainly for design layout purposes-->
+    <div class="menu">
+<!-- (#1 styles.css)To apply the class's styling to the div element, add a class attribute to the div element's opening tag and set its value to menu-->
+        <header>
+            <h1>CAMPER CAFE</h1>
+            <p>Est. 2020</p>
+<!-- OR <small>Est. 2020</small> -->
+        </header>
+<!-- Add a main element below the existing header element. It will eventually contain pricing information about coffee and desserts offered by the cafe -->
+        <main>
+<!--There will be two sections on the menu, one for coffees and one for desserts. Add a section element within the main element so you have a place to put all the coffees available.-->
+            <section>
+                <h2>Coffee</h2>
+
+            </section>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,19 @@
+h1, h2, p 
+{
+    text-align: center;
+}
+/* This is for body element*/
+/* So far you have been using type selectors to style elements. A class selector is defined by a name with a dot directly in front of it, like this:
+.class-name {
+  styles
+} */
+.menu 
+/* #1 (index.html)
+/* .menu(class) was changed from div{} (style elements)*/
+{
+    background-color: burlywood;
+    width: 80%;
+/* You want to center the div horizontally. You can do this by setting its margin-left and margin-right properties to auto */
+    margin-left: auto;
+    margin-right: auto;
+}
